@@ -1,0 +1,22 @@
+{
+  "name": "playground-http2-push",
+  "description": "Test out http2-push",
+  "repository": "yoshuawuyts/playground-http2-push",
+  "version": "1.0.0",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "start": "node .",
+    "test": "standard && npm run deps"
+  },
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "tls-keygen": "^3.1.2"
+  },
+  "devDependencies": {
+    "dependency-check": "^3.0.0",
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "keywords": [],
+  "license": "Apache-2.0"
+}
