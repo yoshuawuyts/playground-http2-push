@@ -20,7 +20,7 @@ var port = 8080
 
   console.log(`key: ${key.length ? 'ok' : 'not'}\ncert: ${cert.length ? 'ok' : 'not ok'}`)
 
-  http2.createServer({ key, cert, allowHTTP1: true }, (req, res) => {
+  http2.createSecureServer({ key, cert, allowHTTP1: true }, (req, res) => {
     console.log('request received on /')
     res.end('supper')
   }).listen(port, () => console.log(`listening on ${port}`))
